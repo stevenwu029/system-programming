@@ -1,7 +1,9 @@
-all: client serve
-client:
-	gcc -o DUMBclient DUMBclient.c
-serve:
-	gcc -o DUMBserve DUMBserver.c -lpthread
+all: memgrind.c mymalloc.o
+	gcc -o memgrind memgrind.c mymalloc.o
+mymalloc.o: mymalloc.c
+	gcc -c mymalloc.c
 clean:
-	rm DUMBserve; rm DUMBclient;
+	rm mymalloc.o; rm memgrind;
+
+	
+	
