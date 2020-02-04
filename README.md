@@ -1,2 +1,2 @@
 # system-programming
-These three codes are projects I did for system programming class, and all of them were 100.
+The system programming projects are saved in different branches.
